@@ -29,7 +29,7 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 margin-left: 30px;
-
+border: none;
 }
 .logo .G{
 
@@ -76,4 +76,194 @@ padding-left: 40px;
 .follow img{
 margin-left: 20px;
  background-color: none;
+}
+/* ......................... */
+
+.banner{
+
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.banner-text{
+
+padding: 30px 100px
+
+}
+.banner-text p{
+
+color: #0B0223;
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+
+}
+.goat{
+display: flex;
+
+
+}
+.goat li{
+
+list-style: none;
+font-family: Work Sans;
+font-size: 95px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+text-transform: uppercase;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.goat-dot{
+width: 10px;
+height: 10px;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+margin-top: 73px;
+border-radius: 50%;
+}
+
+.banner-text ol{
+
+list-style: none;
+}
+
+
+.banner-text ol li{
+margin-top: 15px;
+color: #534C64;
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+}
+
+.banner-button{
+margin-top: 20px;
+
+}
+
+.banner-button button{
+
+display: inline-flex;
+padding: 21px 40px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 48px;
+color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .......media query....... */
+
+@media screen and (max-width:576px) {
+    
+
+nav,.navbar,.banner{
+flex-direction: column;
+
+}
+.navbar li{
+margin-top: 20px;
+
+}
+
+.follow{
+margin-top: 20px;
+
+}
+
+.banner{
+margin-top: 30px;
+
+}
+.banner-text{
+
+padding: 20px 0px
+
+}
+.banner-images img{
+
+width: 425px;
+height: 345px;
+flex-shrink: 0;
+
+
+}
+}
+
+
+@media screen and (max-width:926px) and (min-width:576px){
+
+nav{
+
+flex-direction: column;
+justify-content: center;
+align-items: center;
+box-shadow: none;
+}
+
+.navbar{
+margin-top: 30px;
+margin-left: 150px;
+}
+
+.banner{
+width: 768px;
+
+}
+
+.banner-text{
+
+width: 400px;
+height: 400px;
+
+}
+
+
+.banner-images img{
+
+width: 400px;
+height: 380px;
+
+}
+
+
+
 }
