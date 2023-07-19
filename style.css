@@ -395,10 +395,156 @@ height: 50px;
 
 }
 
+/* ...............play section */
+
+.play{
+
+display: flex;
+align-items: center;
+
+}
+
+.play-text h3{
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+}
+
+.play-text span{
+color: #0B0223;
+font-family: Work Sans;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px;
+
+}
+
+.play-text p{
+color: #534C64;
+text-align: left;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 166.667% */
+
+}
 
 
 
 
+
+
+/* ......................... */
+.game-icon{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+column-gap: 8px;
+row-gap: 8px;
+margin: 40px auto;
+margin-left: 80px;
+}
+.icon-box{
+display: flex;
+align-items: center;
+width: 317px;
+height: 80px;
+flex-shrink: 0;
+border-radius: 50px;
+background: #FFF;
+
+}
+
+.icon-box p{
+margin-left: 10px;
+
+}
+
+.icon-pic{
+width: 60px;
+height: 60px;
+flex-shrink: 0;
+border-radius: 50px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
+}
+
+
+/* ............................*/
+
+.footer{
+margin-top: 100px;
+text-align: center;
+background: #0B0223;
+
+}
+
+.footer .logo{
+text-align: center;
+
+margin-left: 550px;
+margin-top: 120px;
+}
+
+
+
+.footer-items{
+margin-top: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.footer-items li{
+
+list-style: none;
+margin-left: 40px;
+color: white;
+}
+
+
+.footer-icon{
+margin-top: 40px;
+display: flex;
+justify-content: space-evenly;
+padding: 0px 220px;
+
+}
+
+.footer .logo p{
+
+color: white;
+
+}
+
+.last-text{
+
+margin-top: 40px;
+display: flex;
+justify-content: center;
+
+
+
+}
+.last-text li{
+list-style: none;
+color: white;
+margin-left: 40px;
+}
+
+.footer .copy{
+margin-top: 30px;
+text-align: center;
+color: white;
+
+}
 
 
 
@@ -408,7 +554,11 @@ height: 50px;
 
 @media screen and (max-width:576px) {
     
+.logo{
 
+margin-left: 90px;
+
+}
 nav,.navbar,.banner,.banner-2,.online-videos{
 flex-direction: column;
 
@@ -466,8 +616,86 @@ margin-bottom: 5px;
 
 }
 
+.play-text{
+
+margin-left: 40px;
 
 }
+
+
+
+.game-icon{
+
+grid-template-columns: repeat(1,1fr);
+gap: 2px 2px;
+margin: 40px 0px;
+margin-left: 40px;
+}
+
+.footer{
+
+padding: 20px 0px;
+margin: 0px;
+}
+
+
+
+.footer .logo{
+
+margin: 30px 0px;
+text-align: center;
+margin-left: 80px;
+}
+
+.footer-items{
+
+flex-direction: column;
+padding: 0px;
+
+}
+
+.footer-items li{
+
+margin-top: 15px;
+
+}
+
+.footer-icon{
+
+display: grid;
+grid-template-columns: repeat(3,1fr);
+
+column-gap: 20px;
+row-gap: 20px;
+padding: 0px;
+}
+
+.last-text{
+
+display: grid;
+grid-template-columns: repeat(2,1fr);
+row-gap: 15px;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:926px) and (min-width:576px){
@@ -529,5 +757,38 @@ width: 600px;
 }
 
 
+.play-text{
 
+margin:15px auto;
+
+margin-top: 30px;
+
+
+}
+.game-icon{
+
+display: grid;
+grid-template-columns: repeat(2,1fr);
+
+}
+
+
+.footer{
+
+padding: 0px;
+margin: 0px;
+margin-left: 60px;
+}
+
+.footer .logo{
+margin: 15px auto;
+margin-left: 240px;
+margin-top: 30px;
+}
+
+.footer-icon{
+
+padding: 0px 20px;
+
+}
 }
