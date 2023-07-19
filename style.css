@@ -262,7 +262,6 @@ margin-right: 150px;
 
 .online-game{
 
-border: 2px solid brown;
 margin-top: 30px;
 }
 
@@ -388,18 +387,11 @@ display: block;
 
 
 
-
 .box-text{
-display: flex;
-padding: 10px 200px;
-margin-left: 10px;
-justify-content: space-around;
 
-}
-.box-text p{
-margin-right: 12px;
-text-align: left;
-font-size: 18px;
+margin-top: 20px;
+width: 220px;
+height: 50px;
 
 }
 
@@ -417,7 +409,7 @@ font-size: 18px;
 @media screen and (max-width:576px) {
     
 
-nav,.navbar,.banner,.banner-2{
+nav,.navbar,.banner,.banner-2,.online-videos{
 flex-direction: column;
 
 }
@@ -463,6 +455,16 @@ width: 410px;
 
 }
 
+.online-videos{
+margin: 20px 0px;
+padding: 10px 0px;
+margin-left: 100px;
+}
+
+.box-text{
+margin-bottom: 5px;
+
+}
 
 
 }
@@ -470,13 +472,19 @@ width: 410px;
 
 @media screen and (max-width:926px) and (min-width:576px){
 
-nav{
+nav,.online-videos{
 
 flex-direction: column;
 justify-content: center;
 align-items: center;
 box-shadow: none;
 }
+.online-videos{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+column-gap: 20px;
+}
+
 
 .navbar{
 margin-top: 30px;
@@ -519,5 +527,7 @@ margin-top: -15px;
 margin-left: 150px;
 width: 600px;
 }
+
+
 
 }
