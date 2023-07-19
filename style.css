@@ -401,6 +401,7 @@ height: 50px;
 
 display: flex;
 align-items: center;
+justify-content: space-evenly;
 
 }
 
@@ -434,7 +435,31 @@ line-height: 30px; /* 166.667% */
 
 }
 
+.play-image{
+display: inline;
+}
 
+.image-1{
+width: 450px;
+height: 400px;
+background: url(images/Rectangle\ 55.png);
+background-size: cover;
+background-position: center;
+margin: 0px;
+}
+
+.image-2{
+margin: 0px;
+width: 200px;
+height: 250px;
+background: url(images/Rectangle\ 66.png);
+position: relative;
+background-size: cover;
+background-position: center;
+padding: 0px;
+bottom: 70px;
+right: 40px
+}
 
 
 
@@ -675,6 +700,18 @@ padding: 0px;
 display: grid;
 grid-template-columns: repeat(2,1fr);
 row-gap: 15px;
+
+}
+
+.play{
+flex-direction: column;
+
+
+}
+
+.image-1{
+
+margin-top: 30px;
 
 }
 
