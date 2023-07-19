@@ -7,7 +7,16 @@ margin: 0px;
 color: #FF42A5;
 
 }
+.prime-button{
 
+display: inline-flex;
+padding: 15px 30px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 48px;
+background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+color: white;
+}
 nav{
 display: flex;
 justify-content: space-around;
@@ -163,23 +172,236 @@ color: white;
 
 }
 
+.banner-images img{
+
+width: 700px;
+height: 600px;
+
+}
+
+
+/* ................. */
+.banner-2{
+
+margin-top: 120px;
+
+}
+
+.banner-2-title{
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 20px;
+}
+
+
+.banner-2-desc{
+margin-top: 20px;
+color: #534C64;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+margin-bottom: 20px;
+}
+
+.banner-2 button{
+
+margin-top: 10px;
+margin-bottom: 10px;
+
+}
+
+.banner-2 h3{
+color: #534C64;
+font-family: Work Sans;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 45px; /* 187.5% */
+
+}
+
+
+.banner-2 h4{
+color: #534C64;
+font-family: Work Sans;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 45px;
+
+}
+
+
+
+
+.banner-2{
+
+display: flex;
+align-items: center;
+flex-direction: row-reverse;
+
+}
+.banner-2-text{
+margin-right: 40px;
+
+}
+
+
+.banner-2-image img{
+
+width: 800px;
+height: 600px;
+margin-right: 150px;
+}
+
+
+.online-game{
+
+border: 2px solid brown;
+margin-top: 30px;
+}
+
+.online-text{
+text-align: center;
+
+}
+
+
+.online-text h3{
+color: #0B0223;
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+
+}
+.online-text span{
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+
+
+}
+
+.online-text p{
+color: #534C64;
+text-align: center;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 166.667% */
+
+}
+
+.online-videos{
+margin-top: 30px;
+display: flex;
+justify-content: space-between;
+padding: 10px 180px;
+
+}
+
+
+.online-box{
+width: 220px;
+height: 300px;
+flex-shrink: 0;
+border-radius: 16px;
+background-size: cover;
+background-position: center;
+position: relative;
+overflow: hidden;
+
+}
+
+
+.online-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Light black background */
+  opacity: 0;
+  z-index: 1;
+ transition: opacity 0.3s ease;
+}
+
+
+
+.box-overlay {
+ position: absolute;
+ top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+ align-items: center;
+font-size: 20px;
+color: white;
+font-weight: bold;
+ cursor: pointer;
+z-index: 2;
+
+}
+.box-overlay span{
+
+margin-left: 10px;
+
+}
+
+ .watch-now,.box-overlay img{
+  display: none;
+}  
+
+.online-box:hover::before {
+  opacity: 1;
+}
+
+
+
+
+.online-box:hover .watch-now {
+  display: block;
+}  
+.online-box:hover .box-overlay img{
+display: block;
+}
 
 
 
 
 
+.box-text{
+display: flex;
+padding: 10px 200px;
+margin-left: 10px;
+justify-content: space-around;
 
+}
+.box-text p{
+margin-right: 12px;
+text-align: left;
+font-size: 18px;
 
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -195,7 +417,7 @@ color: white;
 @media screen and (max-width:576px) {
     
 
-nav,.navbar,.banner{
+nav,.navbar,.banner,.banner-2{
 flex-direction: column;
 
 }
@@ -218,7 +440,7 @@ margin-top: 30px;
 padding: 20px 0px
 
 }
-.banner-images img{
+.banner-images img,.banner-2-image img{
 
 width: 425px;
 height: 345px;
@@ -226,6 +448,23 @@ flex-shrink: 0;
 
 
 }
+
+
+.banner-2-text{
+text-align: center;
+margin: 0px;
+padding: 0px ;
+}
+
+.banner-2-image img{
+
+margin:  0px;
+width: 410px;
+
+}
+
+
+
 }
 
 
@@ -252,18 +491,33 @@ width: 768px;
 .banner-text{
 
 width: 400px;
-height: 400px;
+height: 380px;
 
 }
 
+.banner-2{
 
-.banner-images img{
+flex-direction: column;
+
+}
+
+.banner-images img,.banner-2-image img{
 
 width: 400px;
 height: 380px;
 
 }
 
+.banner-2-text{
 
+margin: 0px;
+text-align: center;
+
+}
+.banner-2-image img{
+margin-top: -15px;
+margin-left: 150px;
+width: 600px;
+}
 
 }
